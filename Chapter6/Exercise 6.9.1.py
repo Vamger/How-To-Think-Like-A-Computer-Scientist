@@ -27,7 +27,8 @@ test(turn_clockwise("rubbish") == None ) '''
 # S = 17 - 24
 # W = 25 - 32
 
-
+def test():
+    
 
 def turn_clockwise(x):
 
