@@ -1,4 +1,4 @@
-c The four compass points can be abbreviated by single-letterccccccccähähähähäähäähäh<g<
+# The four compass points can be abbreviated by single-letters
 # strings as "N", "E", "S", and "W". Write a function turn_clockwise
 # that takes one of these four compass points as its parameters,
 # and returns the next compass point in the clockwise direction.
@@ -33,11 +33,10 @@ S = [17, 18, 19, 20, 21, 22, 23, 24]
 W = [25, 26, 27, 28, 29, 30, 31, 32]
 
 
-def test():
 
 
 
-def turn_clockwise():
+def turn_clockwise(x):
     if x == N:
         print("E")
     elif x == E:
@@ -47,12 +46,18 @@ def turn_clockwise():
     elif x == W:
         print("N")
     elif x == ValueError:
-        print("8g<Please choose a number between 1 to 32")
+        print("Please choose a number between 1 to 32")
+    else:
+        print(None)
+    return turn_clockwise(x)
+
+def test(turn_clockwise):
+    print("1 - 8 = N, 9 - 16 = E, 17 - 24 = S, 25 - 32 = W)")
+    print("Please type in a value between 1 to 32")
 
 
 
-
-x = input(int("What is the direction of angle?"))
+test(turn_clockwise(42))
 
 
 
