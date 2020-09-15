@@ -27,22 +27,32 @@ test(turn_clockwise("rubbish") == None ) '''
 # S = 17 - 24
 # W = 25 - 32
 
-def test():
-    
-
-def turn_clockwise(x):
-
-x = input(int("What is the direction of angle?"))
-
 N = [1, 2, 3, 4, 5, 6, 7, 8]
 E = [9, 10, 11, 12, 13, 14, 15, 16]
 S = [17, 18, 19, 20, 21, 22, 23, 24]
 W = [25, 26, 27, 28, 29, 30, 31, 32]
 
 
+def test():
 
 
 
+def turn_clockwise():
+    if x == N:
+        print("E")
+    elif x == E:
+        print("S")
+    elif x == S:
+        print("W")
+    elif x == W:
+        print("N")
+    elif x == ValueError:
+        print("8g<Please choose a number between 1 to 32")
+
+
+
+
+x = input(int("What is the direction of angle?"))
 
 
 
