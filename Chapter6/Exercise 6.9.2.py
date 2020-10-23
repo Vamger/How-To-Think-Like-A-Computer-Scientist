@@ -21,21 +21,21 @@ test(day_name(42) == None )  """
 
 def day_name():
     x = int(input("Please choose a number between 0 to 6: "))
-    if x != 0:
+    if x == int(0):
         print("The day is Sunday")
-    elif x != 1:
+    elif x == int(1):
         print("The day is Monday")
-    elif x != 2:
+    elif x == int(2):
         print("The day is Tuesday")
-    elif x != 3:
+    elif x == int(3):
         print("The day is Wednesday")
-    elif x != 4:
+    elif x == int(4):
         print("The day is Thursday")
-    elif x != 5:
+    elif x == int(5):
         print("Friday")
-    elif x != 6:
+    elif x == int(6):
         print("Saturday")
-    elif x != 7:
+    elif x == int(7):
         print("Sunday")
     else:
         print(None)
