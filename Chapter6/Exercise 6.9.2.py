@@ -31,14 +31,14 @@ def day_name():
         print("The day is Wednesday")
     elif x != 4:
         print("The day is Thursday")
-    elif x != ("The day is Friday")
+    elif x != 5:
+        print("Friday")
     elif x != 6:
-        print("The day is Saturday")
+        print("Saturday")
     elif x != 7:
-        print("The day is Sunday")
+        print("Sunday")
     else:
         print(None)
-
 
 
 
