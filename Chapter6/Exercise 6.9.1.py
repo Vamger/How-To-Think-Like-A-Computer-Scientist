@@ -27,33 +27,35 @@ test(turn_clockwise("rubbish") == None ) '''
 # S = 17 - 24
 # W = 25 - 32
 
-N = [1, 2, 3, 4, 5, 6, 7, 8]
-E = [9, 10, 11, 12, 13, 14, 15, 16]
-S = [17, 18, 19, 20, 21, 22, 23, 24]
-W = [25, 26, 27, 28, 29, 30, 31, 32]
-
-def turn_clockwise(x):
-    if x == N:
-        print("E")
-    elif x == E:
-        print("S")
-    elif x == S:
-        print("W")
-    elif x == W:
-        print("N")
-    elif x == ValueError:
-        print("Please choose a number between 1 to 32")
-    else:
-        print(None)
-    return turn_clockwise(x)
-
+N = 8
+E = 16
+S = 24
+W = 32
 
 def test():
     print("1 - 8 = N, 9 - 16 = E, 17 - 24 = S, 25 - 32 = W)")
     print("Please type in a value between 1 to 32")
 
 
+def turn_clockwise(x):
+    if x >= N:
+        print("E")
+    elif x >= E:
+        print("S")
+    elif x >= S:
+        print("W")
+    elif x >= W:
+        print("N")
+    elif x == ValueError:
+        print("Please choose a number between 1 to 32")
+    else:
+        print(None)
+
+
+
+
 test()
+turn_clockwise(20)
 
 
 
