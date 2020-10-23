@@ -32,10 +32,6 @@ E = [9, 10, 11, 12, 13, 14, 15, 16]
 S = [17, 18, 19, 20, 21, 22, 23, 24]
 W = [25, 26, 27, 28, 29, 30, 31, 32]
 
-
-
-
-
 def turn_clockwise(x):
     if x == N:
         print("E")
@@ -51,13 +47,13 @@ def turn_clockwise(x):
         print(None)
     return turn_clockwise(x)
 
-def test(turn_clockwise):
+
+def test():
     print("1 - 8 = N, 9 - 16 = E, 17 - 24 = S, 25 - 32 = W)")
     print("Please type in a value between 1 to 32")
 
 
-
-test(turn_clockwise(42))
+test()
 
 
 
