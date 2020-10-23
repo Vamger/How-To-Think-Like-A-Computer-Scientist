@@ -38,7 +38,7 @@ def day_name():
     elif x == str("Wednesday") or int(3):
         print(int(3))
     elif x == str("Thursday"):
-        return "Thursday"
+        print(int(4))
     elif x == str("Friday"):
         print(int(5))
     elif x == str("Saturday"):
