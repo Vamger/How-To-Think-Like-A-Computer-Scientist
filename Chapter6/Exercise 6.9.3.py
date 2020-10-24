@@ -28,22 +28,15 @@ Saturday = 6
 # GIVEN A DAY
 
 def day_name():
-    x = str(input("Please pick a day of the week: "))
+    x = input("Please pick a day of the week: ")
     if x == str("Sunday"):
         print(int(0))
     elif x == str("Monday"):
         print(int(1))
     elif x == str("Tuesday"):
         print(int(2))
-    elif x == str("Wednesday")
-
-        if x ==
+    elif x == str("Wednesday") or x == str(3):
         print(int(3))
-
-
-
-
-
     elif x == str("Thursday"):
         print(int(4))
     elif x == str("Friday"):
@@ -52,8 +45,6 @@ def day_name():
         print(int(6))
     else:
         print(None)
-
-
 
 
 day_name()
