@@ -24,27 +24,66 @@ Saturday = 6
 
 
 '''
+import sys
 
-# GIVEN A DAY
 
-def day_name():
-    x = input("Please pick a day of the week: ")
-    if x == str("Sunday"):
-        print(int(0))
-    elif x == str("Monday"):
-        print(int(1))
-    elif x == str("Tuesday"):
-        print(int(2))
-    elif x == str("Wednesday") or x == str(3):
-        print(int(3))
-    elif x == str("Thursday"):
-        print(int(4))
-    elif x == str("Friday"):
-        print(int(5))
-    elif x == str("Saturday"):
-        print(int(6))
+def day_name(x):
+    if x == int(0):
+        return "Sunday"
+    elif x == int(1):
+        return "Monday"
+    elif x == int(2):
+        return "Tuesday"
+    elif x == int(3):
+        return "Wednesday"
+    elif x == int(4):
+        return "Thursday"
+    elif x == int(5):
+        return "Friday"
+    elif x == int(6):
+        return "Saturday"
+    elif x == int(7):
+        return "Sunday"
     else:
-        print(None)
+        return None
 
 
-day_name()
+def day_num(x):
+    if x == "Sunday":
+        return 0
+    elif x == "Monday":
+        return 1
+    elif x == "Tuesday":
+        return 2
+    elif x == "Wednesday":
+        return 3
+    elif x == "Thursday":
+        return 4
+    elif x == "Friday":
+        return 5
+    elif x == "Saturday":
+        return 6
+    else:
+        return None
+
+
+
+def test(did_pass):
+    """  Print the result of a test.  """
+    linenum = sys._getframe(1).f_lineno   # Get the caller's line number.
+    if did_pass:
+        msg = "Test at line {0} ok.".format(linenum)
+    else:
+        msg = ("Test at line {0} FAILED.".format(linenum))
+    print(msg)
+
+
+def test_suite():
+    test(day_num("Friday") == 5)
+    test(day_num("Sunday") == 0)
+    test(day_num(day_name(3)) == 3)
+    test(day_name(day_num("Thursday")) == "Thursday")
+
+
+
+test_suite()
