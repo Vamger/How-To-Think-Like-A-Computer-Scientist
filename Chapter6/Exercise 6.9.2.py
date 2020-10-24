@@ -19,27 +19,44 @@ test(day_name(42) == None )  """
 6 = Saturday
 7 = Sunday '''
 
-def day_name():
-    x = int(input("Please choose a number between 0 to 6: "))
+import sys
+
+def day_name(x):
     if x == int(0):
-        print("The day is Sunday")
+        return "Sunday"
     elif x == int(1):
-        print("The day is Monday")
+        return "Monday"
     elif x == int(2):
-        print("The day is Tuesday")
+        return "Tuesday"
     elif x == int(3):
-        print("The day is Wednesday")
+        return "Wednesday"
     elif x == int(4):
-        print("The day is Thursday")
+        return "Thursday"
     elif x == int(5):
-        print("Friday")
+        return "Friday"
     elif x == int(6):
-        print("Saturday")
+        return "Saturday"
     elif x == int(7):
-        print("Sunday")
+        return "Sunday"
     else:
-        print(None)
+        return None
+
+
+def test(did_pass):
+    """  Print the result of a test.  """
+    linenum = sys._getframe(1).f_lineno   # Get the caller's line number.
+    if did_pass:
+        msg = "Test at line {0} ok.".format(linenum)
+    else:
+        msg = ("Test at line {0} FAILED.".format(linenum))
+    print(msg)
+
+
+def test_suite():
+    test(day_name(3) == "Wednesday")
+    test(day_name(6) == "Saturday")
+    test(day_name(42) == None)
 
 
 
-day_name()
+test_suite()
