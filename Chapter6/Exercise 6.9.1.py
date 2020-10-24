@@ -1,3 +1,5 @@
+import sys
+
 # The four compass points can be abbreviated by single-letters
 # strings as "N", "E", "S", and "W". Write a function turn_clockwise
 # that takes one of these four compass points as its parameters,
@@ -27,36 +29,35 @@ test(turn_clockwise("rubbish") == None ) '''
 # S = 17 - 24
 # W = 25 - 32
 
-N = 8
-E = 16
-S = 24
-W = 32
-
-def test():
-    print("1 - 8 = N, 9 - 16 = E, 17 - 24 = S, 25 - 32 = W)")
-    print("Please type in a value between 1 to 32")
-
-
 def turn_clockwise(x):
-    if x >= N:
-        print("E")
-    elif x >= E:
-        print("S")
-    elif x >= S:
-        print("W")
-    elif x >= W:
-        print("N")
-    elif x == ValueError:
-        print("Please choose a number between 1 to 32")
+    if x == "N":
+        return "E"
+    elif x == "E":
+        return "S"
+    elif x == "S":
+        return "W"
+    elif x == "W":
+        return "N"
     else:
-        print(None)
+        return None
+
+def test(did_pass):
+    """  Print the result of a test.  """
+    linenum = sys._getframe(1).f_lineno   # Get the caller's line number.
+    if did_pass:
+        msg = "Test at line {0} ok.".format(linenum)
+    else:
+        msg = ("Test at line {0} FAILED.".format(linenum))
+    print(msg)
 
 
+def test_suite():
+    test(turn_clockwise(42) == None)
+    test(turn_clockwise("rubbish") == None)
+    test(turn_clockwise("N") == "E")
+    test(turn_clockwise("W") == "N")
 
-
-test()
-turn_clockwise(20)
-
+test_suite()
 
 
 
