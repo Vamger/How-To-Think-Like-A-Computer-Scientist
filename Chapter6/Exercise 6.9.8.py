@@ -11,8 +11,8 @@ import sys
 
 def to_secs(x, y, z):
     """z = seconds, y = minutes & x = hours"""
-    s = (int(z) + (int(y)*60)+(int(x)*3600))
-    return s
+    s = (z + ((y*60)+(x*3600)))
+    return int(s)
 
 
 
