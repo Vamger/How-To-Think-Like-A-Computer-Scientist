@@ -19,6 +19,20 @@ def slope(x1, y1, x2, y2):
     s = (y2 - y1) / (x2 - x1)
     return s
 
+# Then use a call to slope in a new function
+# named intercept(x1, y1, x2, y2) that returns
+# the y-intercept of the line through the points
+# (x1, y1) and (x2, y2)
+
+'''
+test(intercept(1, 6, 3, 12) == 3.0)
+test(intercept(6, 1, 1, 6) == 7.0)
+test(intercept(4, 6, 12, 8) == 5.0)
+'''
+
+def intercept(x1, y1, x2, y2):
+    m = slope(x1, y1, x2, y2)
+    return y1 - (m * x1)
 
 def test(did_pass):
     """  Print the result of a test.  """
