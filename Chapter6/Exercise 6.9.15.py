@@ -8,7 +8,7 @@
 
 import sys
 
-def is_odd(n, x):
+def is_odd(n):
     if n % 2 != 0:
         return True
     else:
