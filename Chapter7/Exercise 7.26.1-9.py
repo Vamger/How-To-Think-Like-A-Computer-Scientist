@@ -19,7 +19,7 @@ def sum_even_numbers():
         if i % 2 == 0:
             start_value = start_value + i
     print(start_value)
-    print(40+50+24+76+12)
+
 
 # 3. Sum upp all the negative numbers in a list
 
@@ -66,7 +66,7 @@ def sum_list_not_first_number():
             continue
         start_value = start_value + i
     print(start_value)
-    print(3+1+5+2+3+10)
+
 
 
 sum_list_not_first_number()
