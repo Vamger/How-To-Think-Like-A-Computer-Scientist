@@ -52,5 +52,9 @@ def count_words():
 # count_words()
 
 
-# 3. Sum all the elements in a list up to but not including the first even number.
+# 5. Sum all the elements in a list up to but not including the first even number.
 #    (Write your unit tests. What if there is no even number?)
+
+list3 = [3, 40, 32, 345, 872, 653, 101, 30]
+
+def sum_list_not_first_number():
