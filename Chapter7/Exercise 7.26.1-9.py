@@ -47,10 +47,6 @@ def count_words():
 
 
 
-# count_odd_numbers()
-# sum_even_numbers()
-# count_words()
-
 
 # 5. Sum all the elements in a list up to but not including the first even number.
 #    (Write your unit tests. What if there is no even number?)
@@ -67,6 +63,19 @@ def sum_list_not_first_number():
         start_value = start_value + i
     print(start_value)
 
+# count_odd_numbers()
+# sum_even_numbers()
+# sum_negative_numbers()
+# count_words()
+# sum_list_not_first_number()
 
+# 6. Count how many words occur in a list up to and including
+# the first occurrence of the word “sam”.
+# (Write your unit tests for this case too. What if “sam” does not occur?)
 
-sum_list_not_first_number()
+list4 = ["adam", "frodo", "samuel", "gandalf", "sam",
+         "aragorn", "legolas", "gimli", "monster"]
+
+def count_words_w_sam():
+    for i in list4:
+
