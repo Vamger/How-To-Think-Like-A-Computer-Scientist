@@ -127,8 +127,13 @@ print_mult_table(7)
 
 # function = (n(n+1))/2 <--> (n*n + n*1)/2 <--> (n*n + n)/2
 
-def print_triangular_numbers(n):
+n = [1, 2, 3, 4, 5]
 
+def print_triangular_numbers(n):
+    for i in range(1, n+1):
+        a = int((i + 1)*i /2)
+        print(i, "      ", a)
+    print()
 
 
 
@@ -144,3 +149,5 @@ def print_triangular_numbers(n):
 # sum_list_not_first_number()
 # count_words_w_sam()
 # newton_sqrt(25)
+# print_triangular_numbers(5)
+
