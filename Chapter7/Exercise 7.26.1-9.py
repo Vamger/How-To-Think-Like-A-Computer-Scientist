@@ -80,12 +80,6 @@ def count_words_w_sam():
     print("There are", start_value + 1, "words in the list once reaching and including the word sam")
 
 
-# count_odd_numbers()
-# sum_even_numbers()
-# sum_negative_numbers()
-# count_words()
-# sum_list_not_first_number()
-# count_words_w_sam()
 
 # 7. Add a print function to Newton’s sqrt function that prints out better each time it is calculated.
 # Call your modified function with 25 as an argument and record the results.
@@ -105,21 +99,48 @@ def newton_sqrt(a):
             return f2
         f1 = f2
 
-newton_sqrt(25)
+# 8. Trace the execution of the last version of print_mult_table and figure out how it works.
+'''
+def print_multiples(n, high):
+    for i in range(1, high+1):
+        print(n * i, end="   ")
+    print()
 
+def print_mult_table(high):
+    for i in range(1, high+1):
+        print_multiples(i, high)
+
+print_mult_table(7)
 '''
 
-def sqrt(a):
-    """Modify function square root. Printing out "better" result when
-    processing each time in loop"""
-    approx = a/2.0
-    while True:
-        better = (approx + a/approx)/2.0
-        print (better)
-        if abs(approx - better) < 0.0001:
-            return better
-        approx = better
-
-sqrt(25)
+# 9. Write a function print_triangular_numbers(n) that prints out the first n triangular numbers.
+# A call to print_triangular_numbers(5) would produce the following output:
 
 '''
+1       1
+2       3
+3       6
+4       10
+5       15
+'''
+# (hint: use a web search to find out what a triangular number is.)
+
+# function = (n(n+1))/2 <--> (n*n + n*1)/2 <--> (n*n + n)/2
+
+def print_triangular_numbers(n):
+
+
+
+
+
+
+
+
+
+# count_odd_numbers()
+# sum_even_numbers()
+# sum_negative_numbers()
+# count_words()
+# sum_list_not_first_number()
+# count_words_w_sam()
+# newton_sqrt(25)
