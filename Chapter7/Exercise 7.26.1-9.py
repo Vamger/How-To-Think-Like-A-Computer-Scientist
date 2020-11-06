@@ -138,16 +138,12 @@ def print_triangular_numbers(n):
 
 
 
-
-
-
-
-# count_odd_numbers()
-# sum_even_numbers()
-# sum_negative_numbers()
-# count_words()
-# sum_list_not_first_number()
-# count_words_w_sam()
-# newton_sqrt(25)
-# print_triangular_numbers(5)
+count_odd_numbers()
+sum_even_numbers()
+sum_negative_numbers()
+count_words()
+sum_list_not_first_number()
+count_words_w_sam()
+newton_sqrt(25)
+print_triangular_numbers(5)
 
