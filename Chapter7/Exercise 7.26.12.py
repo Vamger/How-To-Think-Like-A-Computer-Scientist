@@ -9,8 +9,23 @@ wn = turtle.Screen()
 house = turtle.Turtle()
 house.pensize(5)
 
-def draw_house():
+data = [(135, 200), (225, 150), (135, 110), (90, 110),
+        (45, 145), (135, 210),(225, 145), (270, 150)]
 
+def draw_house():
+    for (x, y) in data:
+        house.left(x)
+        house.forward(y)
+
+
+draw_house()
+wn.mainloop()
+
+
+
+
+
+'''
     house.left(135)
     house.forward(200) # Cross 1
     house.left(225)
@@ -28,5 +43,4 @@ def draw_house():
     house.left(270)
     house.forward(150)
 
-draw_house()
-wn.mainloop()
+'''
